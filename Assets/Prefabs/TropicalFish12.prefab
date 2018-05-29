@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 64639450673507308}
   - component: {fileID: 11100000}
   - component: {fileID: 54323171172451556}
+  - component: {fileID: 114251514989135034}
   m_Layer: 0
   m_Name: TropicalFish12
   m_TagString: Untagged
@@ -147,3 +148,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b571f3e49a473924998d589bb8280238, type: 3}
+--- !u!114 &114251514989135034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f041e03f6283284793e9f6e30eb406d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.001
+  rotationSpeed: 4
+  neighbourDistance: 3
+  avoidDistance: 1

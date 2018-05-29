@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour {
 
-	//public static ObjectPooler objectPooler;
 	public List<GameObject> objectPool;
 	protected GameObject poolObject;
 	private int maximumPool;
@@ -28,7 +27,7 @@ public class ObjectPooler : MonoBehaviour {
 		}
 
 		if(extendable) {
-			GameObject poolObject = (GameObject)Instantiate(this.poolObject);
+			GameObject poolObject = (GameObject) Instantiate(this.poolObject);
 			objectPool.Add(poolObject);
 			return poolObject;
 		}
@@ -36,14 +35,14 @@ public class ObjectPooler : MonoBehaviour {
 		return null;
 	}
 
-	public void SetPoolObject(GameObject prefab, int maximumPool = 2, bool extendable = true) {
+	public void SetPoolObject(GameObject prefab, int maximumPool = 1, bool extendable = true) {
 		this.poolObject = prefab;
-		this.maximumPool = 2;
+		this.maximumPool = maximumPool;
 		this.extendable = extendable;
 
 		objectPool = new List<GameObject>();
 		for (int x = 0; x < this.maximumPool; x++) {
-			GameObject poolObject = (GameObject)Instantiate(this.poolObject);
+			GameObject poolObject = (GameObject) Instantiate(this.poolObject);
 			poolObject.SetActive(false);
 			objectPool.Add(poolObject);
 		}

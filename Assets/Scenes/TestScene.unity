@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 323407418}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,8 +206,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldSize: 20
+  finishPrefab: {fileID: 1858578303590078, guid: 9939b2a1fe5d31349bc189a8ff20c5da,
+    type: 2}
+  finishQuantity: 1
   boidPrefab: {fileID: 1596618870223972, guid: e73861ed7212c804cb744c5e4c072ea6, type: 2}
-  boidQuantity: 64
+  boidQuantity: 128
 --- !u!4 &323407420
 Transform:
   m_ObjectHideFlags: 0
