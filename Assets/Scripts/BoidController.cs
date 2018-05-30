@@ -22,8 +22,13 @@ public class BoidController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+
+	// FixedUpdate is called per physics step
+	void FixedUpdate() {
 		turning = (Vector3.Distance(transform.position, new Vector3(0, (this.transform.parent.GetComponent<GameController>()).worldSize / 2f, 0)) >= (this.transform.parent.GetComponent<GameController>()).worldSize) ? true : false;
-		if(turning) {
+		if (turning) {
 			Vector3 direction = (new Vector3(0, (this.transform.parent.GetComponent<GameController>()).worldSize / 2f, 0)) - transform.position;
 			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed * Time.deltaTime);
 			speed = Random.Range(minimumSpeed, maximumSpeed);
@@ -35,11 +40,6 @@ public class BoidController : MonoBehaviour {
 			}
 		}
 		transform.Translate(0, 0, Time.deltaTime * speed);
-	}
-
-	// FixedUpdate is called per physics step
-	void FixedUpdate() {
-		
 	}
 
 	void Boids() {
