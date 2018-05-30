@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2440e8eba54323d4caeb22cb8ec6e137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldSize: 20
+  worldSize: 10
   finishPrefab: {fileID: 1858578303590078, guid: 9939b2a1fe5d31349bc189a8ff20c5da,
     type: 2}
   finishQuantity: 1
@@ -306,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 831722873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

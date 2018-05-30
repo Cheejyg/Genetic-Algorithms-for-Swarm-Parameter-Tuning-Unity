@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
-	public float worldSize = 20f;
+	public float worldSize = 10f;
 	public static ObjectPooler finishPooler;
 	public GameObject finishPrefab;
 	public int finishQuantity = 1;

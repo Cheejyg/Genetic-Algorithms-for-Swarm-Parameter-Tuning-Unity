@@ -5,29 +5,32 @@ using UnityEngine;
 public class BoidController : MonoBehaviour {
 
 	public float speed = 0.001f;
-	public float rotationSpeed = 4.0f;
+	public float rotationSpeed = 5.0f;
+	public float minimumSpeed = 0.001f;
+	public float maximumSpeed = 2.0f;
 	Vector3 averageHeading;
 	Vector3 averagePosition;
 	public float neighbourDistance = 3.0f;
-	public float avoidDistance = 1f;
+	public float avoidDistance = 2f;
 
 	bool turning = false;
 
 	// Use this for initialization
 	void Start () {
-		speed = Random.Range(0, 1.5f);
+		speed = Random.Range(minimumSpeed, maximumSpeed);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		turning = (Vector3.Distance(transform.position, new Vector3(0, (this.transform.parent.GetComponent<GameController>()).worldSize / 2f, 0)) >= (this.transform.parent.GetComponent<GameController>()).worldSize) ? true : false;
 		if(turning) {
-			Vector3 direction = Vector3.zero - transform.position;
+			Vector3 direction = (new Vector3(0, (this.transform.parent.GetComponent<GameController>()).worldSize / 2f, 0)) - transform.position;
 			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed * Time.deltaTime);
-			speed = Random.Range(0, 1.5f);
+			speed = Random.Range(minimumSpeed, maximumSpeed);
 		}
 		else {
-			if (Random.Range(0, 5) < 1) {
+			if (Random.Range(0, 10) < 1) {
+				//Invoke("Boids", 1f);
 				Boids();
 			}
 		}
