@@ -1,19 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1926015362515948}
+  m_IsPrefabParent: 1
+--- !u!1 &1926015362515948
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 400000}
-  - component: {fileID: 3300000}
-  - component: {fileID: 2300000}
-  - component: {fileID: 64639450673507308}
-  - component: {fileID: 11100000}
-  - component: {fileID: 54323171172451556}
-  - component: {fileID: 114251514989135034}
+  - component: {fileID: 4637909041965786}
+  - component: {fileID: 33668397426820702}
+  - component: {fileID: 23500752273660968}
+  - component: {fileID: 64342140572986706}
+  - component: {fileID: 136284425205175302}
+  - component: {fileID: 95089653773198168}
+  - component: {fileID: 54461457412771450}
+  - component: {fileID: 114799694980269746}
   m_Layer: 0
   m_Name: TropicalFish12
   m_TagString: Untagged
@@ -21,31 +33,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1002 &100001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!4 &400000
+--- !u!4 &4637909041965786
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1926015362515948}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.03937008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1002 &400001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!23 &2300000
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!23 &23500752273660968
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1926015362515948}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -55,7 +61,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c5bdabd0b7dd38f438a4342fba36eddb, type: 2}
+  - {fileID: 2100000, guid: e3ed447f3d6dcf24ba9044cd17bf7ada, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,91 +81,89 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1002 &2300001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!33 &3300000
+--- !u!33 &33668397426820702
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1926015362515948}
   m_Mesh: {fileID: 4300000, guid: b571f3e49a473924998d589bb8280238, type: 3}
---- !u!1002 &3300001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!111 &11100000
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!1002 &11100001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100000}
-  m_IsPrefabParent: 1
---- !u!1002 &100100001
-EditorExtensionImpl:
-  serializedVersion: 6
---- !u!54 &54323171172451556
+--- !u!54 &54461457412771450
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1926015362515948}
   serializedVersion: 2
   m_Mass: 0.25
-  m_Drag: 0.25
-  m_AngularDrag: 0.25
+  m_Drag: 0.05
+  m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64639450673507308
+--- !u!64 &64342140572986706
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1926015362515948}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b571f3e49a473924998d589bb8280238, type: 3}
---- !u!114 &114251514989135034
+--- !u!95 &95089653773198168
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926015362515948}
+  m_Enabled: 0
+  m_Avatar: {fileID: 9000000, guid: b571f3e49a473924998d589bb8280238, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114799694980269746
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 1926015362515948}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f041e03f6283284793e9f6e30eb406d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boidSize: 0.10922
   speed: 0.001
-  rotationSpeed: 4
-  neighbourDistance: 3
-  avoidDistance: 1
+  rotationSpeed: 1
+  maximumSpeed: 0.44444445
+  neighbourDistance: 8
+  sqrNeighbourDistance: 0
+  avoidDistance: 1.5
+  sqrAvoidDistance: 0
+--- !u!136 &136284425205175302
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926015362515948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0322992
+  m_Height: 0.109845266
+  m_Direction: 1
+  m_Center: {x: -9.313226e-10, y: 0.0000000018626456, z: 0}

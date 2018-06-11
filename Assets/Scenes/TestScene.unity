@@ -205,12 +205,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2440e8eba54323d4caeb22cb8ec6e137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldSize: 10
+  gameSize: 10
+  boidPrefab: {fileID: 1596618870223972, guid: e73861ed7212c804cb744c5e4c072ea6, type: 2}
+  boidQuantity: 128
   finishPrefab: {fileID: 1858578303590078, guid: 9939b2a1fe5d31349bc189a8ff20c5da,
     type: 2}
   finishQuantity: 1
-  boidPrefab: {fileID: 1596618870223972, guid: e73861ed7212c804cb744c5e4c072ea6, type: 2}
-  boidQuantity: 128
 --- !u!4 &323407420
 Transform:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 323407417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

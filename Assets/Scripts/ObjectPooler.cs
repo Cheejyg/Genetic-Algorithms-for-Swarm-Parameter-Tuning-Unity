@@ -6,7 +6,7 @@ public class ObjectPooler : MonoBehaviour {
 
 	public List<GameObject> objectPool;
 	protected GameObject poolObject;
-	private int maximumPool;
+	//private int poolSize;
 	private bool extendable;
 
 	// Use this for initialization
@@ -35,16 +35,19 @@ public class ObjectPooler : MonoBehaviour {
 		return null;
 	}
 
-	public void SetPoolObject(GameObject prefab, int maximumPool = 1, bool extendable = true) {
+	public ObjectPooler SetPoolObject(GameObject prefab, int poolSize = 1, bool extendable = true) {
 		this.poolObject = prefab;
-		this.maximumPool = maximumPool;
+		//this.poolSize = poolSize;
 		this.extendable = extendable;
 
 		objectPool = new List<GameObject>();
-		for (int x = 0; x < this.maximumPool; x++) {
-			GameObject poolObject = (GameObject) Instantiate(this.poolObject);
+		GameObject poolObject;
+		for (int x = 0; x < poolSize; x++) {
+			poolObject = (GameObject) Instantiate(this.poolObject);
 			poolObject.SetActive(false);
 			objectPool.Add(poolObject);
 		}
+
+		return this;
 	}
 }
